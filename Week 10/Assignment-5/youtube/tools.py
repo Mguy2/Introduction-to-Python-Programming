@@ -9,7 +9,7 @@ This software is made available under the terms of the MIT License.
 import csv
 from typing import List
 from inspect import getmembers, isfunction
-import diagnostics as diagnostics
+import youtube.diagnostics as diagnostics
 from pathlib import Path
 
 
@@ -32,7 +32,6 @@ def read_file(file_name: str = None) -> List[List]:
 
     return entries
 
-entries = read_file("videos_subset.csv")
 
 def dataset_viewer(entries: List[List]) -> None:
     """
